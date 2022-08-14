@@ -1,7 +1,7 @@
 variable "vm_instance_type" {
   type        = string
   description = "EC2 instance type"
-  default     = "t3.small"
+  default     = "t2.micro"
 }
 variable "vm_associate_public_ip_address" {
   type        = bool
