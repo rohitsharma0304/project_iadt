@@ -43,7 +43,7 @@ resource "aws_instance" "vm-server" {
   source_dest_check      = false
   key_name               = aws_key_pair.key_pair.key_name
   associate_public_ip_address = var.vm_associate_public_ip_address
-  user_data = data.template_file #.windows-userdata.rendered
+  #user_data = data.template_file #.windows-userdata.rendered
   
   # root disk
   root_block_device {
