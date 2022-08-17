@@ -5,7 +5,7 @@ resource "tls_private_key" "key_pair" {
 }
 # Create the Key Pair
 resource "aws_key_pair" "key_pair" {
-  key_name   = "kopicloud-key-pair"  
+  key_name   = "ztp-key-pair"  
   public_key = tls_private_key.key_pair.public_key_openssh
 }
 # Save file
